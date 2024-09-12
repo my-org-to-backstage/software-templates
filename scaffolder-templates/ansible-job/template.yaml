@@ -11,7 +11,12 @@ spec:
   owner: janus-authors
   system: janus-idp
   type: service
-  
+  parameters:
+    - title: Provide information about the new component
+      properties:
+        githubOrg:
+          title: GitHub Organization
+          type: string
   steps:
     - id: template
       name: Example
