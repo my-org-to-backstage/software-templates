@@ -106,22 +106,8 @@ spec:
   steps:
     - id: sourceCodeTemplate
       name: Generating the Source Code Component
-      action: fetch:template
-      input:
-        url: ./skeleton
-        values:
-          githubOrg: ${{ parameters.githubOrg }}
-          repoName: ${{ parameters.repoName }}
-          owner: ${{ parameters.owner }}
-          system: ${{ parameters.system }}
-          applicationType: api
-          description: ${{ parameters.description }}
-          namespace: ${{ parameters.namespace }}
-          imageUrl: ${{ parameters.imageUrl }}
-          imageBuilder: s2i-nodejs
-          imageRepository: ${{ parameters.imageRepository }}
-          port: ${{ parameters.port }}
-          ci: ${{ parameters.ci }}
+      action: acme:example
+      
 
     - id: ciTemplate
       name: Generating the CI Component
