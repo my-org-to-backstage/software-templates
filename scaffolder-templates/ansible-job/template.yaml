@@ -11,7 +11,7 @@ spec:
   owner: janus-authors
   system: janus-idp
   type: service
-  parameters:
+  
   steps:
     - id: template
       name: Example
